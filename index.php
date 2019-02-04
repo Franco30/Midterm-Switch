@@ -1,32 +1,17 @@
-<!DOCTYPE html>
-<html>
-<body>
-<input id="color" type="text">
+<?php
+$favcolor = "red";
 
-<button type="button" onclick="colorChanger(color)">Try it</button>
-
-<div id="color_box">
-    </div>
-
-<script>
-function colorChanger(color) {
-  switch(color) {
-		case "red":
-			document.getElementById("color_box").style.backgroundColor = "red";
-			break;
-		case "blue":
-			document.getElementById("color_box").style.backgroundColor = "blue";
-			break;
-		case "green":
-			document.getElementById("color_box").style.backgroundColor = "green";
-			break;
-		default:
-			document.getElementById("color_box").style.backgroundColor = "violet";
-			break;
-		
-	}
+switch ($favcolor) {
+    case "red":
+        echo "Your favorite color is red!";
+        break;
+    case "blue":
+        echo "Your favorite color is blue!";
+        break;
+    case "green":
+        echo "Your favorite color is green!";
+        break;
+    default:
+        echo "Your favorite color is neither red, blue, nor green!";
 }
-</script>
-
-</body>
-</html>
+?>
